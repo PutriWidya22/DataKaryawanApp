@@ -17,9 +17,6 @@
             android:name=".DataKaryawan"
             android:exported="false" />
         <activity
-            android:name=".InformasiJabatan"
-            android:exported="false" />
-        <activity
             android:name=".InformasiPerusahaan"
             android:exported="false"
             tools:ignore="Instantiatable" />
