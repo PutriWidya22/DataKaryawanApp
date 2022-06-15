@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- menggunakan constraintLayout dengan layout lebar dan tingginya menggunakan match_parent atau
+     disesuaikan dengan tampilan smartphone. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg3"
+    tools:context=".Home">
+
+    <!-- pada Button berikut memuat Button yang jika di klik akan menuju ke halaman Informasi
+         Perusahaan, button tersebut memiliki id "btnInformasiPerusahaan" dengan sisipan icon
+         yang tersedia di drawable dengan nama "ic_baseline_apartment_24"-->
+    <Button
+        android:id="@+id/btnInfromasiPerusahaan"
+        android:layout_width="306dp"
+        android:layout_height="56dp"
+        android:drawableLeft="@drawable/ic_baseline_apartment_24"
+        android:text="Informasi Perusahaan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <!-- pada Button berikut memuat Button yang jika di klik akan menuju ke halaman Tambah
+         Karyawan, button tersebut memiliki id "btnTambahKaryawan" dengan sisipan icon
+         yang tersedia di drawable dengan nama "ic_baseline_person_add_alt_1_24"-->
+    <Button
+        android:id="@+id/btnTambahKaryawan"
+        android:layout_width="306dp"
+        android:layout_height="56dp"
+        android:drawableLeft="@drawable/ic_baseline_person_add_alt_1_24"
+        android:text="Tambahkan Karyawan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.57" />
+
+    <!-- pada Button berikut memuat Button yang jika di klik akan menuju ke halaman Data
+        Karyawan, button tersebut memiliki id "btnDataKaryawan" dengan sisipan icon
+        yang tersedia di drawable dengan nama "ic_baseline_people_24"-->
+    <Button
+        android:id="@+id/btnDataKaryawan"
+        android:layout_width="306dp"
+        android:layout_height="56dp"
+        android:drawableLeft="@drawable/ic_baseline_people_24"
+        android:text="Data Karyawan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.749" />
+
+    <!-- pada ImageView berikut memuat gambar yang berada pada package drawable dengan nama
+         gambar "admin" dan memiliki id "imageView7-->
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="315dp"
+        android:layout_height="256dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.364"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.029"
+        app:srcCompat="@drawable/admin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

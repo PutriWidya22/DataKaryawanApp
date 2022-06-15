@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">DataKaryawanApp</string>
+    <string name="login" />
+    <string name="password" />
+    <string name="username" />
+    <string name="login_karyawan" />
+    <string name="astraMobil" />
+    <string name="home_main" />
+    <string name="et_title" />
+    <string name="et_description" />
+    <string name="astra_mobil">Astra Mobil</string>
+    <string name="didirikan_pada_tanggal_20_03_1998_pendiri_bp_subroto_tempat_semarang">Didirikan pada : - Tanggal : 20-03-1998 - Pendiri : Bp Subroto - Tempat : Semarang</string>
+    <string name="astra_mobil_merupakaan_perusahaan_yang_bergerak_di_bidang_pembuatan_sperpat_mobil_dan_menciptakan_mobil_produk_dalam_negri">Astra Mobil merupakaan perusahaan yang bergerak di bidang pembuatan sperpat mobil dan menciptakan mobil produk dalam negri.</string>
+</resources>

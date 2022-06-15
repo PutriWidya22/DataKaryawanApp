@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- menggunakan constraintLayout dengan layout lebar menggunakan match_parent atau disesuaikan
+     dengan tampilan smartphone, dan tingginya menggunakan wrap_content atau disesuaikan dengan
+     isi kontennya. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="wrap_content">
+
+    <!-- pada ImageView berikut memuat gambar yang berada pada package drawable dengan nama
+         gambar "login" dan memiliki id "image-->
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- pada TextView berikut berisi text "Nama Karyawan", dengan id "namaText", memiliki gravity
+         center_vertikal, ukuran sizenya 18 dan warna hitam.-->
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:text="Nama Karyawan"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

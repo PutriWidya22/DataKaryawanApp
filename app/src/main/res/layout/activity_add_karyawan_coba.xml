@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- menggunakan constraintLayout dengan layout lebar dan tingginya menggunakan match_parent atau
+     disesuaikan dengan tampilan smartphone. -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg3"
+    tools:context=".AddKaryawanCoba">
+
+    <!-- pada EditText berikut memiliki id "editData" dengan
+        layout margin awal dan akhirnya memiliki ukuran 25dp
+        dan 55dp, layout panjang lebarnya menggunakan wrap content
+        atau disesuaikan dengan isi kontennya.-->
+    <EditText
+        android:id="@+id/editData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textData"
+        android:layout_alignStart="@+id/editFile"
+        android:layout_alignLeft="@+id/editFile"
+        android:layout_alignBottom="@+id/textData"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="55dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Data Karyawan"
+        android:lines="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textData"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646"
+        tools:ignore="RtlHardcoded,TextFields" />
+
+    <!-- pada TextView berikut berisi text "File Karyawan", dengan
+         id "textName", menggunakan layout panjang dan lebar
+         wrap content atau disesuaikan dengan isi kontennya.
+         layout margin awalnya memiliki ukuran 32dp dan layout
+         akhirnya memiliki ukuran 20dp.-->
+    <TextView
+        android:id="@+id/textName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:text="File Karyawan"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.429"
+        tools:ignore="MissingConstraints,RtlHardcoded" />
+
+    <!-- pada EditText berikut berfungsi sebagai wadah admin untuk
+        memasukkan text dengan type input textPersonName dengan
+        id "editFile", layout margin awal dan akhirnya memiliki
+        ukuran 25dp dan 55dp, layout panjang lebarnya menggunakan
+        wrap content atau disesuaikan dengan isi kontennya.-->
+    <EditText
+        android:id="@+id/editFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textName"
+        android:layout_alignStart="@+id/btnSave"
+        android:layout_alignLeft="@+id/btnSave"
+        android:layout_alignBottom="@+id/textName"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="45dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="Nama File"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <!-- pada TextView berikut berisi text "Data Karyawan", dengan
+        id "textData", menggunakan layout panjang dan lebar
+        wrap content atau disesuaikan dengan isi kontennya.
+        layout margin awalnya memiliki ukuran 32dp dan layout
+        akhirnya memiliki ukuran 20dp.-->
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textName"
+        android:layout_alignEnd="@+id/textName"
+        android:layout_alignRight="@+id/textName"
+        android:layout_marginTop="124dp"
+        android:text="Data Karyawan"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.055"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textName"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="RtlHardcoded" />
+
+    <!-- pada Button View tersebut digunakan untuk menampilkan isi dari
+        file edit yang sebelumnya telah dimasukkan dengan cara memasukkan
+        nama file karyawan setelah itu klik tombol view.
+        button tersebut memiliki id "btnView", dengan layout panjang dan
+        lebarnya menggunakan wrap content atau disesuaikan dengan isi
+        kontennya. -->
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnSave"
+        android:layout_alignEnd="@+id/editData"
+        android:layout_alignRight="@+id/editData"
+        android:text="VIEW"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.73"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        tools:ignore="RtlHardcoded" />
+
+    <!-- pada Button Save tersebut digunakan untuk menyimpan file Karyawan
+         dan file edit yang telah dimasukkan. memiliki id "btnSave"
+         memiliki layout panjang dan lebar wrap content atau disesuaikan
+         dengan isi kontennya, -->
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textData"
+        android:layout_alignLeft="@+id/textData"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="18dp"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.85"
+        tools:ignore="RtlHardcoded" />
+
+
+    <!-- pada ImageView memuat gambar yang berada pada package drawable dengan nama
+         gambar "karyawan" dan memiliki id "imageView3-->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="188dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/karyawan" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Menggunakan Constraint Layout dengan layout panjang dan lebar match_parent atau disesuaikan
+     dengan tampilan smartphone-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgg3"
+    tools:context=".InformasiPerusahaan">
+
+    <!-- pada TextView berikut berisi text "Astra Mobil", dengan id "textData", text tersebut juga
+         menggunakan warna hitam, ukurannya "35sp" dengan style "bold" atau tebal.-->
+    <TextView
+        android:id="@+id/textData"
+        android:layout_width="226dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="236dp"
+        android:text="@string/astra_mobil"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- pada ImageView berikut memuat gambar yang berada pada package drawable dengan nama
+         gambar "org" dan memiliki id "imageView16". lebar layoutnya "170dp" dan tingginya "205dp".
+         -->
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="170dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.018"
+        app:srcCompat="@drawable/org"
+        tools:ignore="ContentDescription" />
+
+    <!-- pada TextView berikut berisi text mengenai pendiri perusahaan astra mobil, dengan id
+         "textView4", text tersebut juga menggunakan warna hitam atau dengan kode #0000, ukurannya
+         "18sp" dengan font "serif".-->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="216dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="serif"
+        android:text="didirikan pada :
+        Tanggal : 20-03-1998
+        Pendiri : Bp. Subroto
+        Tempat : Semarang"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView3" />
+
+    <!-- pada TextView berikut berisi text mengenai apa itu perusahaan astra mobil, dengan id
+         "textView3", text tersebut juga menggunakan warna hitam atau dengan kode #000000,
+         ukurannya "18sp" dengan font "serif.-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="336dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="serif"
+        android:text="@string/astra_mobil_merupakaan_perusahaan_yang_bergerak_di_bidang_pembuatan_sperpat_mobil_dan_menciptakan_mobil_produk_dalam_negri"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textData" />
+
+    <!-- pada ImageView berikut memuat gambar yang berada pada package drawable dengan nama
+         gambar "gedungperusahaan" dan memiliki id "imageView2". lebar layoutnya "310dp" dan
+         tingginya "226dp".
+         -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="310dp"
+        android:layout_height="226dp"
+        app:layout_constraintBottom_toTopOf="@+id/textData"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gedungperusahaan"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
